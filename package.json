@@ -1,0 +1,23 @@
+{
+  "name": "jim-utility",
+  "version": "1.0.0",
+  "description": "my first npm publish",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wowdacom/jim-utility.git"
+  },
+  "keywords": [
+    "jim",
+    "utility"
+  ],
+  "author": "Jim Wu Hu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wowdacom/jim-utility/issues"
+  },
+  "homepage": "https://github.com/wowdacom/jim-utility#readme"
+}
