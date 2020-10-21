@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/http-vue-loader"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chakra-ui@0.3.9/dist/index.min.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <counter></counter>
+        <Pagination></Pagination>
+    </div>
+    <script>
+        Vue.component('counter', {
+            template: '<div><div>目前總數為 {{ count }} </div><button @click="handleAddUp">增加</button></div>',
+            data() {
+                return {
+                    count: 0
+                }
+            },
+            methods: {
+                handleAddUp() {
+                    this.count++
+                }
+            }
+        })
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            },
+            components: {
+                'Pagination': httpVueLoader('Pagination.vue')
+            }
+        })
+    </script>
+</body>
+
+</html>
